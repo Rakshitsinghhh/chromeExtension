@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Monitor /IG in Fields",
+    "version": "1.0",
+    "description": "Detects /IG typed in any input or textarea on any webpage and replaces it with an Instagram link.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  

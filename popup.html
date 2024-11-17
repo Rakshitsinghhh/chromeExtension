@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Position Check</title>
+    <script>
+        function checkCursorPosition() {
+            const textField = document.getElementById('textField');
+            const cursorPosition = textField.selectionStart; // Get cursor position
+
+            const charAtCursor = textField.value.charAt(cursorPosition);
+            
+            if (charAtCursor === 'a') {
+                alert("The cursor is at a position with the letter 'a'.");
+            } else {
+                alert("The cursor is not at a position with the letter 'a'.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <textarea id="textField" rows="4" cols="50"></textarea><br>
+    <button onclick="checkCursorPosition()">Check Cursor Position</button>
+</body>
+</html>
